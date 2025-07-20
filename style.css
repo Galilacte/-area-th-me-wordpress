@@ -1,0 +1,257 @@
+/*
+Theme Name: theme-personaliser
+Author: Ton Badin Florent
+Description: Mon thème WordPress
+Version: 1.0
+*/
+
+/* Couleurs du thème */
+:root {
+  --black-color: #000000;
+  --gris-claire-color: #b3b3b3;
+  --gris-moyen-color: #cccccc;
+  --blanc-color: #ffffff;
+  --vert-clair-color: #e6f2e6;
+  --gris-vert-color: #a3b3a3;
+  --vert-sombre-color: #4d6633;
+}
+
+/* Typographie */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #201f1f6b;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--blanc-color);
+}
+
+.nav-links a {
+  color: var(--black-color);
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--gris-claire-color);
+}
+
+.learn-more-btn {
+  background-color: var(--vert-sombre-color);
+  color: var(--blanc-color);
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.learn-more-btn:hover {
+  background-color: var(--gris-vert-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--blanc-color);
+  border-top: 1px solid var(--gris-moyen-color);
+  margin: 0 20px;
+}
+
+.footer-nav a {
+  color: var(--black-color);
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  color: var(--gris-claire-color);
+}
+
+/* page-area */
+.background-image {
+  background-color: var(--gris-vert-color);
+  padding: 20px 0;
+  border-radius: 40px;
+  margin: 0 auto 60px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.background-image img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Logos Section */
+.titre-logos {
+  color: var(--gris-claire-color) !important;
+  font-size: 15px;
+}
+
+.area-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  opacity: 0.7;
+  flex-wrap: wrap;
+}
+
+.area-logos img {
+  max-height: 35px;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.area-logos img:hover {
+  opacity: 1;
+}
+
+/* Section Texte + Image */
+.area-text-section {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 80px;
+}
+
+.area-text-section h2 {
+  border-top: 1px solid var(--gris-moyen-color);
+  padding-top: 70px;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 20px;
+}
+
+.area-text-section h4 {
+  color: var(--gris-claire-color);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.area-text-section h3 {
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 1px solid var(--gris-moyen-color);
+  padding: 14px 0;
+  color: var(--black-color);
+}
+
+.area-text-section img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
+
+.btn-discover {
+  display: inline-block;
+  background-color: var(--vert-clair-color);
+  color: var(--black-color);
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.btn-discover:hover {
+  background-color: var(--gris-vert-color);
+  color: var(--blanc-color);
+}
+
+.area-final-section {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 80px;
+}
+
+.area-final-section > div:first-child {
+  flex: 1 1 40%;
+}
+
+.area-final-section > div:last-child {
+  flex: 1 1 50%;
+}
+
+.area-final-section img {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+.area-final-section blockquote {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  max-width: 400px;
+  color: var(--black-color);
+  margin-bottom: 30px;
+  border-top: 1px solid var(--gris-moyen-color);
+  padding: 30px 0;
+}
+
+.area-final-section h4 {
+  font-size: 14px;
+  color: var(--black-color);
+  margin-bottom: 5px;
+}
+
+.area-final-section h6 {
+  color: var(--gris-claire-color);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+}
